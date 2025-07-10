@@ -31,12 +31,10 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-white overflow-x-hidden pb-16 md:pb-0">
       {/* Header */}
-      <header className="bg-brand-dark-blue text-white py-4 sticky top-0 z-50 shadow-lg backdrop-blur-md">
+      <header className="bg-brand-dark-blue/95 text-white py-4 relative md:fixed md:top-0 md:left-0 md:right-0 md:w-full z-50 shadow-lg backdrop-blur-md transition-all duration-300">
         <div className="container-custom">
           <div className="flex items-center justify-between">
-            <div className="text-xl md:text-2xl lg:text-3xl font-bold animate-fade-in">
-              Super Seven Distribution
-            </div>
+            <img src="/supersevendistribution.png" alt="Super Seven Distribution" className="w-[100px] transition-all duration-300" />
             
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center space-x-6">
@@ -58,13 +56,16 @@ export default function Home() {
             </nav>
             
             {/* Desktop CTA */}
-            <a href="#contact" className="hidden lg:flex btn-secondary animate-fade-in">
+            <a href="https://calendly.com/super7distribution-info/30min" className="hidden lg:flex btn-secondary animate-fade-in">
               Get Started <ArrowRight className="ml-2 w-4 h-4" />
             </a>
             
           </div>
         </div>
       </header>
+
+      {/* Header Spacer for Medium and Large Screens */}
+      <div className="hidden md:block h-[72px]"></div>
 
       {/* Hero Section */}
       <section className="relative min-h-screen flex flex-col justify-center items-center overflow-hidden w-full sm:pt-0 pt-16">
@@ -112,16 +113,16 @@ export default function Home() {
             </div>
 
             {/* CTA Section */}
-            <div className="animate-slide-in-up mt-8 md:mt-12">
-              <div className="relative inline-block">
+            <div className="animate-slide-in-up mt-8 md:mt-12 w-full">
+              <div className="relative inline-block w-full sm:w-auto">
                 <div className="absolute inset-0 bg-brand-orange rounded-3xl transform rotate-1 scale-105 opacity-20"></div>
-                <button className="relative bg-brand-orange text-brand-dark-blue text-lg md:text-xl lg:text-2xl font-bold py-5 px-8 md:py-6 md:px-12 rounded-3xl shadow-2xl hover:bg-yellow-400 transition-all duration-300 transform hover:scale-105 hover:shadow-3xl">
-                  <Phone className="inline mr-3 w-6 h-6" />
-                  Book Free Discovery Call
-                  <ArrowRight className="inline ml-3 w-6 h-6" />
-                </button>
+                <a href="https://calendly.com/super7distribution-info/30min" target="_blank" className="relative bg-brand-orange text-brand-dark-blue text-base sm:text-lg md:text-xl lg:text-2xl font-bold py-3 px-4 sm:py-4 sm:px-6 md:py-5 md:px-8 lg:py-6 lg:px-12 rounded-3xl shadow-2xl hover:bg-yellow-400 transition-all duration-300 transform hover:scale-105 hover:shadow-3xl flex items-center justify-center w-full sm:w-auto">
+                  <Phone className="inline mr-2 sm:mr-3 w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
+                  <span className="whitespace-nowrap">Book Free Discovery Call</span>
+                  <ArrowRight className="inline ml-2 sm:ml-3 w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
+                </a>
               </div>
-              <p className="text-xs md:text-sm mt-6 opacity-80 flex items-center justify-center lg:justify-start">
+              <p className="text-xs sm:text-sm md:text-base mt-4 sm:mt-6 opacity-80 flex items-center justify-center lg:justify-start text-center lg:text-left">
                 🔥 Limited spots available in your area - Next call in 15 minutes
               </p>
             </div>
@@ -664,8 +665,8 @@ export default function Home() {
             </div>
             <div className="feature-card animate-slide-in-up">
               <div className="text-5xl mb-6">💡</div>
-              <h4 className="text-xl font-bold mb-4">$200/month in geo-targeted ads</h4>
-              <p className="text-gray-200 leading-relaxed">We run them for you</p>
+              <h4 className="text-xl font-bold mb-4">Digital Marketing Support</h4>
+              <p className="text-gray-200 leading-relaxed">We help you get more customers</p>
               <div className="mt-4 flex items-center text-brand-orange">
                 <TrendingUp className="w-4 h-4 mr-2" />
                 <span className="text-sm">Managed marketing</span>
@@ -1244,11 +1245,11 @@ export default function Home() {
                 <p className="text-lg mb-8 text-gray-600">
                   All you have to do is talk with our team and get all your questions answered — no pressure.
                 </p>
-                <button className="btn-primary text-2xl py-6 px-12 rounded-2xl shadow-2xl animate-pulse-slow">
+                <a href="https://calendly.com/super7distribution-info/30min" target="_blank" className="btn-primary text-2xl py-6 px-12 rounded-2xl shadow-2xl animate-pulse-slow">
                   <Phone className="inline mr-3 w-6 h-6" />
                   Book Free Discovery Call
                   <ArrowRight className="inline ml-3 w-6 h-6" />
-                </button>
+                </a>
                 <p className="text-sm mt-6 text-gray-600">
                   ⏱️ Average call duration: 12 minutes | 🔥 Next available: Today
                 </p>
@@ -1279,11 +1280,11 @@ export default function Home() {
                 <p className="text-lg md:text-xl">Don't let the store down the road beat you to it.</p>
               </div>
             </div>
-            <button className="btn-primary text-2xl py-6 px-12 rounded-2xl shadow-2xl animate-pulse-slow">
+            <a href="https://calendly.com/super7distribution-info/30min" target="_blank" className="btn-primary text-2xl py-6 px-12 rounded-2xl shadow-2xl animate-pulse-slow">
               <ChevronRight className="inline mr-3 w-6 h-6" />
               Get Your CPAP Station Set Up Today
               <ArrowRight className="inline ml-3 w-6 h-6" />
-            </button>
+            </a>
           </div>
         </div>
       </section>
@@ -1339,20 +1340,27 @@ export default function Home() {
               </nav>
             </div>
             
-            {/* Contact & CTA */}
+            {/* Newsletter Signup */}
             <div>
-              <h4 className="font-bold mb-6 text-brand-orange text-lg">Ready to Start?</h4>
+              <h4 className="font-bold mb-6 text-brand-orange text-lg">Stay Updated</h4>
               <div className="space-y-4">
                 <p className="text-gray-300">
-                  Book your free 15-minute discovery call today
+                  Get the latest CPAP industry insights and pharmacy success stories
                 </p>
-                <button className="btn-primary w-full justify-center">
-                  <Phone className="inline mr-2 w-4 h-4" />
-                  Book Free Call
-                </button>
+                <div className="space-y-3">
+                  <input 
+                    type="email" 
+                    placeholder="Enter your email address"
+                    className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-orange focus:border-transparent backdrop-blur-sm"
+                  />
+                  <button className="btn-primary w-full justify-center">
+                    Subscribe
+                    <ArrowRight className="inline ml-3 w-6 h-6" />
+                  </button>
+                </div>
                 <div className="text-center">
                   <p className="text-sm text-gray-400">
-                    🔥 Limited spots in your area
+                    Weekly tips • No spam • Unsubscribe anytime
                   </p>
                 </div>
               </div>
@@ -1393,7 +1401,8 @@ export default function Home() {
             <span className="text-xs font-medium">Benefits</span>
           </a>
           <a 
-            href="#contact" 
+            href="https://calendly.com/super7distribution-info/30min" 
+            target="_blank"
             className="mobile-nav-item relative"
           >
             <div className="absolute -top-2 -left-2 -right-2 -bottom-2 bg-brand-orange rounded-full opacity-90"></div>
