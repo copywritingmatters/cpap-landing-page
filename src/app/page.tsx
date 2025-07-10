@@ -107,7 +107,7 @@ export default function Home() {
               <p className="text-sm font-semibold text-center lg:text-left mb-4">Trusted by pharmacies across North America</p>
               <div className="flex flex-wrap justify-center lg:justify-start items-center gap-6 md:gap-10 w-full max-w-xl mx-auto lg:mx-0 py-2">
                 <img src="/dm-pharma-logo.png" alt="Dorwin Medical" className="h-10 w-auto object-contain hover:grayscale transition duration-300" />
-                <img src="/family-pharmacy-logo.png" alt="Family Pharmacy" className="h-10 w-auto object-contain hover:grayscale transition duration-300" />
+                <img src="/family-pharmacy.png" alt="Family Pharmacy" className="h-10 w-auto object-contain hover:grayscale transition duration-300" />
                 <img src="/health-plus-pharmacy-logo.png" alt="Health Plus" className="h-10 w-auto object-contain hover:grayscale transition duration-300" />
               </div>
             </div>
