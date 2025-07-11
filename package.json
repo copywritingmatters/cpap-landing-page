@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "rm -rf .next out && next build",
+    "clean": "rimraf .next out",
+    "build": "npm run clean && next build",
     "start": "next start",
     "lint": "next lint",
     "deploy": "npm run build && wrangler deploy"
@@ -25,6 +26,7 @@
     "eslint": "^8",
     "eslint-config-next": "^15.0.3",
     "postcss": "^8",
+    "rimraf": "^6.0.1",
     "tailwindcss": "^3.3.0",
     "typescript": "^5"
   }

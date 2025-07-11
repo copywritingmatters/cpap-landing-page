@@ -1,10 +1,14 @@
 {
   "name": "cpap-landing-page",
   "compatibility_date": "2025-07-11",
+  "main": "./out/index.html",
   "build": {
     "command": "npm run build"
   },
-  "site": {
-    "bucket": "./out"
+  "workers_dev": true,
+  "route": "",
+  "assets": {
+    "include": ["out/**/*"],
+    "exclude": []
   }
 } 
