@@ -8,7 +8,7 @@
     "build": "npm run clean && next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "npm run build && wrangler deploy"
+    "deploy": "npm run build && wrangler pages deploy out"
   },
   "dependencies": {
     "chart.js": "^4.5.0",
