@@ -1340,23 +1340,152 @@ export default function Home() {
               </nav>
             </div>
             
-            {/* Newsletter Signup */}
+                        {/* Newsletter Signup */}
             <div>
               <h4 className="font-bold mb-6 text-brand-orange text-lg">Stay Updated</h4>
               <div className="space-y-4">
                 <p className="text-gray-300">
                   Get the latest CPAP industry insights and pharmacy success stories
                 </p>
-                <div className="space-y-3">
-                  <input 
-                    type="email" 
-                    placeholder="Enter your email address"
-                    className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-orange focus:border-transparent backdrop-blur-sm"
-                  />
-                  <button className="btn-primary w-full justify-center">
-                    Subscribe
-                    <ArrowRight className="inline ml-3 w-6 h-6" />
-                  </button>
+                <div id="mc_embed_shell">
+                  <style type="text/css">
+                    {`
+                      #mc_embed_signup {
+                        background: transparent !important;
+                        clear: left;
+                        font: 14px Helvetica, Arial, sans-serif;
+                        width: 100% !important;
+                        border: none !important;
+                      }
+                      #mc_embed_signup form {
+                        padding: 0 !important;
+                        margin: 0 !important;
+                      }
+                      #mc_embed_signup h2 {
+                        display: none !important;
+                      }
+                      #mc_embed_signup .indicates-required {
+                        color: #fead01 !important;
+                        font-size: 12px !important;
+                        margin-bottom: 8px !important;
+                      }
+                      #mc_embed_signup .mc-field-group {
+                        margin-bottom: 16px !important;
+                      }
+                      #mc_embed_signup .mc-field-group label {
+                        display: block !important;
+                        color: #fead01 !important;
+                        font-weight: bold !important;
+                        margin-bottom: 8px !important;
+                        font-size: 14px !important;
+                      }
+                      #mc_embed_signup .mc-field-group input {
+                        width: 100% !important;
+                        padding: 12px 16px !important;
+                        border-radius: 8px !important;
+                        background: rgba(255, 255, 255, 0.1) !important;
+                        border: 1px solid rgba(255, 255, 255, 0.2) !important;
+                        color: white !important;
+                        font-size: 14px !important;
+                        backdrop-filter: blur(4px) !important;
+                        transition: all 0.3s ease !important;
+                      }
+                      #mc_embed_signup .mc-field-group input:focus {
+                        outline: none !important;
+                        border-color: #fead01 !important;
+                        box-shadow: 0 0 0 2px rgba(254, 173, 1, 0.2) !important;
+                      }
+                      #mc_embed_signup .mc-field-group input::placeholder {
+                        color: rgba(255, 255, 255, 0.6) !important;
+                      }
+                      #mc_embed_signup .button {
+                        width: 100% !important;
+                        background: linear-gradient(135deg, #fead01 0%, #f39c12 100%) !important;
+                        color: #105f7f !important;
+                        border: none !important;
+                        padding: 12px 24px !important;
+                        border-radius: 8px !important;
+                        font-weight: bold !important;
+                        font-size: 16px !important;
+                        cursor: pointer !important;
+                        transition: all 0.3s ease !important;
+                        box-shadow: 0 4px 12px rgba(254, 173, 1, 0.3) !important;
+                      }
+                      #mc_embed_signup .button:hover {
+                        background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%) !important;
+                        transform: translateY(-2px) !important;
+                        box-shadow: 0 6px 20px rgba(254, 173, 1, 0.4) !important;
+                      }
+                      #mc_embed_signup .asterisk {
+                        color: #fead01 !important;
+                      }
+                      #mc_embed_signup .clear.foot {
+                        margin-top: 16px !important;
+                      }
+                      #mc_embed_signup .refferal_badge {
+                        width: 160px !important;
+                        height: 30px !important;
+                        opacity: 0.7 !important;
+                        margin-top: 12px !important;
+                      }
+                      #mc_embed_signup .optionalParent p {
+                        text-align: center !important;
+                        margin-top: 12px !important;
+                      }
+                      #mc_embed_signup .response {
+                        margin-top: 8px !important;
+                        padding: 8px 12px !important;
+                        border-radius: 6px !important;
+                        font-size: 13px !important;
+                      }
+                      #mc_embed_signup #mce-error-response {
+                        background: rgba(220, 53, 69, 0.1) !important;
+                        color: #dc3545 !important;
+                        border: 1px solid rgba(220, 53, 69, 0.3) !important;
+                      }
+                      #mc_embed_signup #mce-success-response {
+                        background: rgba(40, 167, 69, 0.1) !important;
+                        color: #28a745 !important;
+                        border: 1px solid rgba(40, 167, 69, 0.3) !important;
+                      }
+                    `}
+                  </style>
+                  <div id="mc_embed_signup">
+                    <form action="https://super7distribution.us5.list-manage.com/subscribe/post?u=e07d66bb3d6ced8e22a1ce256&amp;id=c74d047f6e&amp;f_id=0094bcedf0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank">
+                      <div id="mc_embed_signup_scroll">
+                        <h2>Subscribe</h2>
+                        <div className="indicates-required"><span className="asterisk">*</span> indicates required</div>
+                        <div className="mc-field-group">
+                          <label htmlFor="mce-EMAIL">Email Address <span className="asterisk">*</span></label>
+                          <input type="email" name="EMAIL" className="required email" id="mce-EMAIL" required defaultValue="" placeholder="Enter your email address" />
+                        </div>
+                        <div id="mce-responses" className="clear foot">
+                          <div className="response" id="mce-error-response" style={{display: 'none'}}></div>
+                          <div className="response" id="mce-success-response" style={{display: 'none'}}></div>
+                        </div>
+                        <div aria-hidden="true" style={{position: 'absolute', left: '-5000px'}}>
+                          {/* real people should not fill this in and expect good things - do not remove this or risk form bot signups */}
+                          <input type="text" name="b_e07d66bb3d6ced8e22a1ce256_c74d047f6e" tabIndex={-1} defaultValue="" />
+                        </div>
+                        <div className="optionalParent">
+                          <div className="clear foot">
+                            <input type="submit" name="subscribe" id="mc-embedded-subscribe" className="button" value="Subscribe" />
+                            <p style={{margin: '0px auto'}}>
+                              <a href="http://eepurl.com/jeUGnw" title="Mailchimp - email marketing made easy and fun">
+                                <span style={{display: 'inline-block', backgroundColor: 'transparent', borderRadius: '4px'}}>
+                                  <img className="refferal_badge" src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg" alt="Intuit Mailchimp" style={{width: '160px', height: '30px', display: 'flex', padding: '2px 0px', justifyContent: 'center', alignItems: 'center', opacity: 0.7}} />
+                                </span>
+                              </a>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+                  <script type="text/javascript">
+                    {`(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[4]='PHONE';ftypes[4]='phone';fnames[7]='MERGE0';ftypes[7]='radio';fnames[8]='FULLNAME';ftypes[8]='text';fnames[1]='PHARMNAME';ftypes[1]='text';fnames[2]='CITY';ftypes[2]='text';fnames[5]='PROVINCE';ftypes[5]='text';fnames[6]='POSTCODE';ftypes[6]='text';fnames[3]='ADDRESS';ftypes[3]='text';fnames[9]='CONTACTDTE';ftypes[9]='text';}(jQuery));var $mcj = jQuery.noConflict(true);`}
+                  </script>
                 </div>
                 <div className="text-center">
                   <p className="text-sm text-gray-400">
