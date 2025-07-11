@@ -1,6 +1,9 @@
 {
   "name": "cpap-landing-page",
   "compatibility_date": "2025-07-11",
+  "build": {
+    "command": "npm run build"
+  },
   "assets": {
     "directory": "./out"
   }
