@@ -34,7 +34,9 @@ export default function Home() {
       <header className="bg-brand-dark-blue/95 text-white py-4 relative md:fixed md:top-0 md:left-0 md:right-0 md:w-full z-50 shadow-lg backdrop-blur-md transition-all duration-300">
         <div className="container-custom">
           <div className="flex items-center justify-between">
-            <img src="/supersevendistribution.png" alt="Super Seven Distribution" className="w-[100px] transition-all duration-300" />
+            <a href="#" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>
+              <img src="/supersevendistribution.png" alt="Super Seven Distribution" className="w-[100px] transition-all duration-300 hover:scale-105" />
+            </a>
             
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center space-x-6">
@@ -1489,7 +1491,7 @@ export default function Home() {
                 </div>
                 <div className="text-center">
                   <p className="text-sm text-gray-400">
-                    Weekly tips • No spam • Unsubscribe anytime
+                    No spam • Unsubscribe anytime
                   </p>
                 </div>
               </div>
