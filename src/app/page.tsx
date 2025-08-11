@@ -1,6 +1,6 @@
 'use client'
-import React from 'react'
-import { CheckCircle, Star, Users, TrendingUp, Shield, Zap, Clock, DollarSign, Target, Award, Phone, ArrowRight, ChevronRight, Home as HomeIcon, Gift, CheckSquare, MessageCircle } from 'lucide-react'
+import React, { useState } from 'react'
+import { CheckCircle, Star, Users, TrendingUp, Shield, Zap, Clock, DollarSign, Target, Award, Phone, ArrowRight, ChevronRight, Home as HomeIcon, Gift, CheckSquare, MessageCircle, ChevronLeft } from 'lucide-react'
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -28,6 +28,28 @@ ChartJS.register(
 )
 
 export default function Home() {
+  // Image carousel state
+  const [currentImageIndex, setCurrentImageIndex] = useState(0)
+  const galleryImages = [
+    '/product/cpap-gallery-1.jpg',
+    '/product/cpap-gallery-2.jpg',
+    '/product/cpap-gallery-3.jpg',
+    '/product/cpap-gallery-4.jpeg',
+    '/product/cpap-gallery-5.jpeg'
+  ]
+
+  const nextImage = () => {
+    setCurrentImageIndex((prev) => (prev + 1) % galleryImages.length)
+  }
+
+  const prevImage = () => {
+    setCurrentImageIndex((prev) => (prev - 1 + galleryImages.length) % galleryImages.length)
+  }
+
+  const goToImage = (index: number) => {
+    setCurrentImageIndex(index)
+  }
+
   return (
     <main className="min-h-screen bg-white overflow-x-hidden pb-16 md:pb-0">
       {/* Header */}
@@ -1210,6 +1232,132 @@ export default function Home() {
                 <p className="text-gray-700 leading-relaxed whitespace-pre-line">{item.detail}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* See it in your Store - Image Carousel Section */}
+      <section className="section-padding bg-gradient-to-br from-white to-gray-50 relative overflow-hidden">
+        {/* Decorative Background Elements */}
+        <div className="absolute inset-0 bg-gradient-to-br from-brand-orange/5 via-transparent to-brand-blue/5"></div>
+        <div className="absolute -top-24 -right-24 w-96 h-96 bg-brand-orange/10 rounded-full blur-3xl"></div>
+        <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-brand-blue/10 rounded-full blur-3xl"></div>
+        
+        <div className="container-custom relative z-10">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 text-brand-dark-blue animate-slide-in-up">
+              See it in your <span className="text-brand-orange">Store</span>
+            </h2>
+            <p className="text-xl md:text-2xl mb-8 text-gray-600 animate-slide-in-up max-w-3xl mx-auto">
+              Real CPAP stations in pharmacies just like yours
+            </p>
+            <div className="w-24 h-1 bg-brand-orange mx-auto rounded-full"></div>
+          </div>
+
+          {/* Image Carousel */}
+          <div className="max-w-5xl mx-auto">
+            <div className="relative bg-white/80 backdrop-blur-xl rounded-3xl p-8 md:p-12 border border-white/20 shadow-2xl overflow-hidden">
+              {/* Decorative Elements */}
+              <div className="absolute inset-0 bg-gradient-to-br from-brand-orange/5 to-brand-blue/5"></div>
+              <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-brand-orange/30 to-transparent"></div>
+              
+              <div className="relative z-10">
+                {/* Main Image Display */}
+                <div className="relative mb-8">
+                  <div className="aspect-video md:aspect-[4/3] lg:aspect-video rounded-2xl overflow-hidden shadow-xl bg-gray-100">
+                    <img 
+                      src={galleryImages[currentImageIndex]}
+                      alt={`CPAP Station in Store ${currentImageIndex + 1}`}
+                      className="w-full h-full object-cover transition-all duration-500 transform hover:scale-105"
+                    />
+                    
+                    {/* Navigation Arrows */}
+                    <button 
+                      onClick={prevImage}
+                      className="absolute left-4 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg hover:bg-white hover:scale-110 transition-all duration-300 border border-gray-200"
+                      aria-label="Previous image"
+                    >
+                      <ChevronLeft className="w-6 h-6 text-brand-dark-blue" />
+                    </button>
+                    
+                    <button 
+                      onClick={nextImage}
+                      className="absolute right-4 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg hover:bg-white hover:scale-110 transition-all duration-300 border border-gray-200"
+                      aria-label="Next image"
+                    >
+                      <ChevronRight className="w-6 h-6 text-brand-dark-blue" />
+                    </button>
+
+                    {/* Image Counter */}
+                    <div className="absolute top-4 right-4 bg-black/70 backdrop-blur-sm text-white px-3 py-1 rounded-full text-sm font-medium">
+                      {currentImageIndex + 1} / {galleryImages.length}
+                    </div>
+                  </div>
+                </div>
+
+                {/* Thumbnail Navigation */}
+                <div className="flex justify-center space-x-3 mb-6">
+                  {galleryImages.map((image, index) => (
+                    <button
+                      key={index}
+                      onClick={() => goToImage(index)}
+                      className={`relative w-16 h-16 md:w-20 md:h-20 rounded-lg overflow-hidden shadow-md transition-all duration-300 border-2 ${
+                        index === currentImageIndex 
+                          ? 'border-brand-orange scale-110 shadow-lg' 
+                          : 'border-gray-200 hover:border-brand-orange/50 hover:scale-105'
+                      }`}
+                    >
+                      <img 
+                        src={image}
+                        alt={`Thumbnail ${index + 1}`}
+                        className="w-full h-full object-cover"
+                      />
+                      {index === currentImageIndex && (
+                        <div className="absolute inset-0 bg-brand-orange/20 backdrop-blur-[1px]"></div>
+                      )}
+                    </button>
+                  ))}
+                </div>
+
+                {/* Carousel Description */}
+                <div className="text-center">
+                  <p className="text-lg md:text-xl text-gray-700 mb-6 max-w-2xl mx-auto">
+                    See how seamlessly our CPAP stations integrate into real pharmacy environments. 
+                    Professional, compact, and designed to drive sales.
+                  </p>
+                  
+                  {/* Feature highlights */}
+                  <div className="grid md:grid-cols-3 gap-6 max-w-3xl mx-auto">
+                    <div className="flex items-center justify-center space-x-2 text-brand-dark-blue">
+                      <CheckCircle className="w-5 h-5 text-brand-orange" />
+                      <span className="font-semibold">Compact Design</span>
+                    </div>
+                    <div className="flex items-center justify-center space-x-2 text-brand-dark-blue">
+                      <CheckCircle className="w-5 h-5 text-brand-orange" />
+                      <span className="font-semibold">Professional Display</span>
+                    </div>
+                    <div className="flex items-center justify-center space-x-2 text-brand-dark-blue">
+                      <CheckCircle className="w-5 h-5 text-brand-orange" />
+                      <span className="font-semibold">Easy Integration</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Call to Action */}
+          <div className="text-center mt-12">
+            <div className="animate-slide-in-up w-full flex justify-center items-center">
+              <div className="relative inline-block w-full sm:w-auto">
+                <div className="absolute inset-0 bg-brand-orange rounded-3xl transform rotate-1 scale-105 opacity-20"></div>
+                <a href="https://wa.me/message/RMK63MOVRDPEG1" target="_blank" className="relative bg-brand-orange text-brand-dark-blue text-base sm:text-lg md:text-xl lg:text-2xl font-bold py-3 px-4 sm:py-4 sm:px-6 md:py-5 md:px-8 lg:py-6 lg:px-12 rounded-3xl shadow-2xl hover:bg-yellow-400 transition-all duration-300 transform hover:scale-105 hover:shadow-3xl flex items-center justify-center w-full sm:w-auto">
+                  <MessageCircle className="inline mr-2 sm:mr-3 w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
+                  <span className="whitespace-nowrap">See it in Your Store</span>
+                  <ArrowRight className="inline ml-2 sm:ml-3 w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
