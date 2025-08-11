@@ -31,7 +31,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-white overflow-x-hidden pb-16 md:pb-0">
       {/* Header */}
-      <header className="bg-brand-dark-blue/95 text-white py-4 relative md:fixed md:top-0 md:left-0 md:right-0 md:w-full z-50 shadow-lg backdrop-blur-md transition-all duration-300">
+      <header className="bg-brand-dark-blue text-white py-4 relative md:fixed md:top-0 md:left-0 md:right-0 md:w-full z-50 shadow-lg backdrop-blur-md transition-all duration-300">
         <div className="container-custom">
           <div className="flex items-center justify-between">
             <a href="#" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>
@@ -40,25 +40,25 @@ export default function Home() {
             
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center space-x-6">
-              <a href="#benefits" className="text-gray-200 hover:text-brand-orange transition-colors duration-300 font-medium">
+              <a href="#benefits" className="text-white hover:text-brand-orange transition-colors duration-300 font-medium">
                 Benefits
               </a>
-              <a href="#features" className="text-gray-200 hover:text-brand-orange transition-colors duration-300 font-medium">
+              <a href="#features" className="text-white hover:text-brand-orange transition-colors duration-300 font-medium">
                 Features
               </a>
-              <a href="#proof" className="text-gray-200 hover:text-brand-orange transition-colors duration-300 font-medium">
+              <a href="#proof" className="text-white hover:text-brand-orange transition-colors duration-300 font-medium">
                 Proof
               </a>
-              <a href="#pricing" className="text-gray-200 hover:text-brand-orange transition-colors duration-300 font-medium">
+              <a href="#pricing" className="text-white hover:text-brand-orange transition-colors duration-300 font-medium">
                 Pricing
               </a>
-              <a href="#contact" className="text-gray-200 hover:text-brand-orange transition-colors duration-300 font-medium">
+              <a href="#contact" className="text-white hover:text-brand-orange transition-colors duration-300 font-medium">
                 Contact
               </a>
             </nav>
             
             {/* Desktop CTA */}
-            <a href="https://calendly.com/super7distribution-info/30min" className="hidden lg:flex btn-secondary animate-fade-in">
+            <a href="https://wa.me/message/RMK63MOVRDPEG1" target="_blank" className="hidden lg:flex btn-secondary animate-fade-in">
               Get Started <ArrowRight className="ml-2 w-4 h-4" />
             </a>
             
@@ -70,21 +70,9 @@ export default function Home() {
       <div className="hidden md:block h-[72px]"></div>
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex flex-col justify-center items-center overflow-hidden w-full sm:pt-0 pt-16">
-        {/* Animated Background */}
-        <div className="absolute inset-0 gradient-bg">
-          <div className="absolute inset-0 pattern-bg opacity-30"></div>
-          <div className="absolute inset-0 bg-black/20"></div>
-          {/* Floating Elements */}
-          <div className="absolute top-20 left-10 text-4xl animate-float opacity-20" style={{animationDelay: '0s'}}>💤</div>
-          <div className="absolute top-40 right-20 text-3xl animate-float opacity-15" style={{animationDelay: '2s'}}>😴</div>
-          <div className="absolute bottom-40 left-20 text-5xl animate-float opacity-10" style={{animationDelay: '4s'}}>🛏️</div>
-          <div className="absolute bottom-20 right-10 text-3xl animate-float opacity-20" style={{animationDelay: '1s'}}>💤</div>
-          <div className="absolute top-60 left-1/4 text-2xl animate-float opacity-15" style={{animationDelay: '3s'}}>🌙</div>
-          <div className="absolute top-80 right-1/3 text-4xl animate-float opacity-10" style={{animationDelay: '5s'}}>😴</div>
-        </div>
+      <section className="relative min-h-screen flex flex-col justify-center items-center overflow-hidden w-full sm:pt-16  bg-white">
 
-        <div className="container-custom relative z-10 flex flex-col lg:flex-row items-center justify-center w-full px-4 md:px-8 lg:px-12 py-8 md:py-12 lg:py-16 text-white min-h-[60vh]">
+        <div className="container-custom relative z-10 flex flex-col lg:flex-row items-center justify-center w-full px-4 md:px-8 lg:px-12 py-8 md:py-12 lg:py-16 text-black min-h-[60vh]">
           {/* Left Column - Text Content */}
           <div className="w-full lg:w-1/2 lg:pr-8 xl:pr-12 flex flex-col items-center lg:items-start text-center lg:text-left">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-slide-in-up leading-tight max-w-2xl md:max-w-3xl lg:max-w-none mx-auto lg:mx-0">
@@ -118,15 +106,12 @@ export default function Home() {
             <div className="animate-slide-in-up mt-8 md:mt-12 w-full">
               <div className="relative inline-block w-full sm:w-auto">
                 <div className="absolute inset-0 bg-brand-orange rounded-3xl transform rotate-1 scale-105 opacity-20"></div>
-                <a href="https://calendly.com/super7distribution-info/30min" target="_blank" className="relative bg-brand-orange text-brand-dark-blue text-base sm:text-lg md:text-xl lg:text-2xl font-bold py-3 px-4 sm:py-4 sm:px-6 md:py-5 md:px-8 lg:py-6 lg:px-12 rounded-3xl shadow-2xl hover:bg-yellow-400 transition-all duration-300 transform hover:scale-105 hover:shadow-3xl flex items-center justify-center w-full sm:w-auto">
-                  <Phone className="inline mr-2 sm:mr-3 w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
-                  <span className="whitespace-nowrap">Book Free Discovery Call</span>
+                <a href="https://wa.me/message/RMK63MOVRDPEG1" target="_blank" className="relative bg-brand-orange text-brand-dark-blue text-base sm:text-lg md:text-xl lg:text-2xl font-bold py-3 px-4 sm:py-4 sm:px-6 md:py-5 md:px-8 lg:py-6 lg:px-12 rounded-3xl shadow-2xl hover:bg-yellow-400 transition-all duration-300 transform hover:scale-105 hover:shadow-3xl flex items-center justify-center w-full sm:w-auto">
+                  <MessageCircle className="inline mr-2 sm:mr-3 w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
+                  <span className="whitespace-nowrap">Message us on Whatsapp</span>
                   <ArrowRight className="inline ml-2 sm:ml-3 w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
                 </a>
               </div>
-              <p className="text-xs sm:text-sm md:text-base mt-4 sm:mt-6 opacity-80 flex items-center justify-center lg:justify-start text-center lg:text-left">
-                🔥 Limited spots available in your area - Next call in 15 minutes
-              </p>
             </div>
           </div>
 
@@ -147,8 +132,8 @@ export default function Home() {
 
         {/* Scroll Indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-white/40 rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-white/60 rounded-full mt-2 animate-pulse"></div>
+          <div className="w-6 h-10 border-2 border-gray-400 rounded-full flex justify-center">
+            <div className="w-1 h-3 bg-gray-600 rounded-full mt-2 animate-pulse"></div>
           </div>
         </div>
       </section>
@@ -157,17 +142,12 @@ export default function Home() {
       <section className="section-padding bg-white">
         <div className="container-custom">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-brand-dark-blue animate-slide-in-up">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-black animate-slide-in-up">
               Sleep apnea isn't slowing down and pharmacies stocking CPAP stations are cashing in fast.
             </h2>
-            <p className="text-xl md:text-2xl font-semibold mb-8 text-brand-dark-blue animate-slide-in-up">
+            <p className="text-xl md:text-2xl font-semibold mb-8 text-black animate-slide-in-up">
               This is what customers are saying right now:
             </p>
-            <div className="flex justify-center items-center gap-2 animate-slide-in-up">
-              <div className="w-3 h-3 bg-brand-blue rounded-full animate-pulse"></div>
-              <div className="w-3 h-3 bg-brand-orange rounded-full animate-pulse" style={{animationDelay: '0.2s'}}></div>
-              <div className="w-3 h-3 bg-brand-dark-blue rounded-full animate-pulse" style={{animationDelay: '0.4s'}}></div>
-            </div>
           </div>
           
           {/* Reviews Grid */}
@@ -206,27 +186,15 @@ export default function Home() {
       </section>
 
       {/* Statistics Section - Professional Design */}
-      <section className="section-padding bg-brand-dark-blue text-white relative overflow-hidden">
-        {/* Enhanced Background Elements */}
-        <div className="absolute inset-0 bg-gradient-to-br from-brand-dark-blue via-brand-dark-blue to-blue-900"></div>
-        <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent"></div>
-        
-        {/* Subtle Floating Elements */}
-        <div className="absolute inset-0 pointer-events-none opacity-20">
-          <div className="absolute top-20 left-4 md:left-10 text-2xl md:text-3xl animate-float" style={{animationDelay: '0s'}}>💤</div>
-          <div className="absolute top-40 right-4 md:right-20 text-xl md:text-2xl animate-float" style={{animationDelay: '2s'}}>😴</div>
-          <div className="absolute bottom-40 left-4 md:left-20 text-3xl md:text-4xl animate-float" style={{animationDelay: '4s'}}>🛏️</div>
-          <div className="absolute bottom-20 right-4 md:right-10 text-xl md:text-2xl animate-float" style={{animationDelay: '1s'}}>💤</div>
-        </div>
-
+      <section className="section-padding bg-white text-black relative overflow-hidden">
         <div className="container-custom relative z-10">
           {/* Section Header */}
           <div className="text-center mb-12 md:mb-20">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 md:mb-6 animate-slide-in-up text-white drop-shadow-lg leading-tight">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 md:mb-6 animate-slide-in-up text-black leading-tight">
               The Sleep Apnea Crisis in
               <span className="block text-brand-orange">Canada</span>
           </h2>
-            <p className="text-lg md:text-xl lg:text-2xl text-white/80 max-w-3xl mx-auto leading-relaxed px-4">
+            <p className="text-lg md:text-xl lg:text-2xl text-gray-700 max-w-3xl mx-auto leading-relaxed px-4">
               Here are some interesting facts most people don't know about the problem:
             </p>
               </div>
@@ -234,15 +202,15 @@ export default function Home() {
           {/* Enhanced Statistics Grid */}
           <div className="grid grid-cols-1 xl:grid-cols-3 gap-6 md:gap-8 lg:gap-10 max-w-7xl mx-auto">
             {/* Interactive Sleep Apnea Growth Chart */}
-            <div className="xl:col-span-2 bg-white/5 backdrop-blur-xl rounded-2xl p-4 md:p-6 lg:p-8 border border-white/10 hover:border-white/20 transition-all duration-300 group">
+            <div className="xl:col-span-2 bg-white rounded-2xl p-4 md:p-6 lg:p-8 border border-gray-200 hover:border-gray-300 transition-all duration-300 group">
               <div className="mb-6 md:mb-8">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-4 gap-2">
-                  <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-white">Sleep Apnea Growth</h3>
+                  <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-black">Sleep Apnea Growth</h3>
                   <div className="bg-brand-orange/20 px-3 py-1 rounded-full self-start sm:self-center">
                     <span className="text-brand-orange text-xs md:text-sm font-semibold">2015-2024</span>
             </div>
               </div>
-                <p className="text-white/70 text-base md:text-lg">Tracking the alarming rise in sleep apnea cases across Canada</p>
+                <p className="text-gray-600 text-base md:text-lg">Tracking the alarming rise in sleep apnea cases across Canada</p>
             </div>
               
               <div className="bg-white rounded-xl p-4 md:p-6 shadow-2xl">
@@ -425,36 +393,36 @@ export default function Home() {
                  
                  {/* Key Statistic Highlight */}
                  <div className="mt-4 md:mt-6 text-center">
-                   <div className="inline-flex flex-col sm:flex-row items-center bg-brand-orange/20 backdrop-blur-sm rounded-2xl px-4 md:px-6 py-3 md:py-4 border border-brand-orange/30">
+                   <div className="inline-flex flex-col sm:flex-row items-center bg-brand-orange/10 rounded-2xl px-4 md:px-6 py-3 md:py-4 border border-brand-orange/30">
                      <div className="text-3xl md:text-4xl lg:text-5xl font-bold text-brand-orange mb-2 sm:mb-0 sm:mr-4">5.4M</div>
                      <div className="text-center sm:text-left">
-                       <div className="text-white font-semibold text-base md:text-lg">Canadians Affected</div>
-                       <div className="text-white/70 text-xs md:text-sm">As of 2024</div>
+                       <div className="text-black font-semibold text-base md:text-lg">Canadians Affected</div>
+                       <div className="text-gray-600 text-xs md:text-sm">As of 2024</div>
                      </div>
                    </div>
                  </div>
                </div>
 
                                 {/* 80% Undiagnosed Card */}
-                <div className="bg-gradient-to-br from-white/[0.08] to-white/[0.02] backdrop-blur-xl rounded-2xl p-4 md:p-6 lg:p-8 border border-white/10 hover:border-white/20 transition-all duration-500 group flex flex-col items-center h-full relative overflow-hidden">
+                <div className="bg-white rounded-2xl p-4 md:p-6 lg:p-8 border border-gray-200 hover:border-gray-300 transition-all duration-500 group flex flex-col items-center h-full relative overflow-hidden">
                     {/* Decorative Background Elements */}
                     <div className="absolute inset-0 bg-gradient-to-br from-brand-orange/5 via-transparent to-brand-blue/5"></div>
                     <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
                     <div className="absolute -top-24 -right-24 w-48 h-48 bg-brand-orange/10 rounded-full blur-3xl"></div>
-                    <div className="absolute -bottom-24 -left-24 w-48 h-48 bg-brand-blue/10 rounded-full blur-3xl"></div>
+              <div className="absolute -bottom-24 -left-24 w-48 h-48 bg-gray-200 rounded-full blur-3xl"></div>
 
                     {/* Icon and Title Section */}
                     <div className="flex flex-col items-center mb-4 md:mb-6 lg:mb-8 relative">
                       <div className="relative text-center">
-                        <h3 className="text-xl md:text-2xl lg:text-3xl font-bold bg-gradient-to-r from-white via-white to-white/90 bg-clip-text text-transparent mb-2 md:mb-3 relative z-10">
+                        <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-black mb-2 md:mb-3 relative z-10">
                           Hidden Crisis
                         </h3>
-                        <p className="text-base md:text-lg font-medium bg-gradient-to-r from-white/70 to-white/50 bg-clip-text text-transparent mt-1 md:mt-2">Most cases go undetected</p>
+                        <p className="text-base md:text-lg font-medium text-gray-600 mt-1 md:mt-2">Most cases go undetected</p>
                       </div>
                     </div>
 
                     {/* Donut Chart Section */}
-                    <div className="bg-white/[0.03] backdrop-blur-sm rounded-xl p-4 md:p-6 mb-4 md:mb-6 lg:mb-8 w-full border border-white/5 relative group-hover:border-white/10 transition-colors duration-500">
+                    <div className="bg-white rounded-xl p-4 md:p-6 mb-4 md:mb-6 lg:mb-8 w-full border border-gray-200 relative group-hover:border-gray-300 transition-colors duration-500">
                       <div className="absolute inset-0 bg-gradient-to-br from-brand-orange/5 to-brand-blue/5 rounded-xl"></div>
                       <div className="relative w-full aspect-square max-w-[180px] md:max-w-[220px] lg:max-w-[240px] mx-auto">
                         <Pie
@@ -464,7 +432,7 @@ export default function Home() {
                               {
                                 data: [80, 20],
                                 backgroundColor: [
-                                  'rgba(255, 99, 132, 0.9)',
+                                  'rgba(0, 99, 132, 0.9)',
                                   'rgba(254, 173, 1, 0.9)'
                                 ],
                                 borderColor: ['rgba(255, 255, 255, 0.1)', 'rgba(255, 255, 255, 0.1)'],
@@ -511,8 +479,8 @@ export default function Home() {
                           }}
                         />
                         <div className="absolute inset-0 flex flex-col items-center justify-center">
-                          <div className="text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-brand-orange via-white to-brand-blue bg-clip-text text-transparent mb-1">80%</div>
-                          <div className="text-xs md:text-sm font-medium text-white/90">Undiagnosed</div>
+                          <div className="text-3xl md:text-4xl lg:text-5xl font-bold text-brand-dark-blue bg-clip-text text-transparent mb-1">80%</div>
+                          <div className="text-xs md:text-sm font-medium text-gray-700">Undiagnosed</div>
                         </div>
                       </div>
                     </div>
@@ -521,8 +489,8 @@ export default function Home() {
                     <div className="text-center mt-auto relative group-hover:transform group-hover:scale-105 transition-transform duration-500">
                       <div className="absolute inset-0 bg-gradient-to-r from-brand-orange/10 to-brand-blue/10 rounded-xl blur-xl"></div>
                       <div className="relative">
-                        <div className="text-2xl md:text-3xl lg:text-4xl font-bold bg-gradient-to-r from-brand-orange to-brand-blue bg-clip-text text-transparent mb-2">4.3M</div>
-                        <div className="text-sm md:text-base font-medium text-white/80">
+                        <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-dark-blue bg-clip-text text-transparent mb-2">4.3M</div>
+                        <div className="text-sm md:text-base font-medium text-gray-700">
                           Canadians don't know<br />they have sleep apnea
                         </div>
                       </div>
@@ -533,12 +501,12 @@ export default function Home() {
              
              {/* Call to Action */}
              <div className="text-center mt-8 md:mt-12 lg:mt-16">
-               <div className="inline-block bg-white/10 backdrop-blur-xl rounded-2xl p-4 md:p-6 lg:p-8 border border-white/20 mx-4">
-                 <h4 className="text-xl md:text-2xl font-bold text-white mb-3 md:mb-4">Your pharmacy can be part of the solution</h4>
-                 <p className="text-white/80 text-base md:text-lg mb-4 md:mb-6 max-w-2xl mx-auto">
+               <div className="inline-block bg-white rounded-2xl p-4 md:p-6 lg:p-8 border border-gray-200 mx-4">
+                 <h4 className="text-xl md:text-2xl font-bold text-black mb-3 md:mb-4">Your pharmacy can be part of the solution</h4>
+                 <p className="text-gray-700 text-base md:text-lg mb-4 md:mb-6 max-w-2xl mx-auto">
                    Help your community while building a profitable revenue stream
                  </p>
-                 <div className="flex flex-wrap justify-center gap-3 md:gap-4 text-xs md:text-sm text-white/70">
+                 <div className="flex flex-wrap justify-center gap-3 md:gap-4 text-xs md:text-sm text-gray-600">
                    <div className="flex items-center">
                      <CheckCircle className="w-3 h-3 md:w-4 md:h-4 mr-1 md:mr-2 text-brand-orange" />
                      High-margin products
@@ -553,6 +521,16 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <div className="animate-slide-in-up mt-8 md:mt-12 w-full">
+              <div className="relative inline-block w-full sm:w-auto">
+                <div className="absolute inset-0 bg-brand-orange rounded-3xl transform rotate-1 scale-105 opacity-20"></div>
+                <a href="https://wa.me/message/RMK63MOVRDPEG1" target="_blank" className="relative bg-brand-orange text-brand-dark-blue text-base sm:text-lg md:text-xl lg:text-2xl font-bold py-3 px-4 sm:py-4 sm:px-6 md:py-5 md:px-8 lg:py-6 lg:px-12 rounded-3xl shadow-2xl hover:bg-yellow-400 transition-all duration-300 transform hover:scale-105 hover:shadow-3xl flex items-center justify-center w-full sm:w-auto">
+                  <MessageCircle className="inline mr-2 sm:mr-3 w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
+                  <span className="whitespace-nowrap">Message us on Whatsapp</span>
+                  <ArrowRight className="inline ml-2 sm:ml-3 w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
+                </a>
+              </div>
+            </div>
         </div>
       </section>
 
@@ -583,7 +561,7 @@ export default function Home() {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-brand-blue to-brand-orange rounded-3xl transform rotate-1"></div>
               <div className="relative bg-white p-8 rounded-3xl shadow-2xl">
-                <p className="text-3xl md:text-4xl font-bold text-gradient animate-slide-in-up">
+                <p className="text-3xl md:text-4xl font-bold text-black animate-slide-in-up">
                   Until now.
                 </p>
               </div>
@@ -606,96 +584,97 @@ export default function Home() {
           </div>
           <div className="grid md:grid-cols-2 gap-8 lg:gap-12 max-w-6xl mx-auto">
             <div className="flex items-start space-x-6 p-6 rounded-2xl bg-[#fead01] hover:bg-brand-orange/80 transition-all duration-300 animate-slide-in-left">
-              <div className="flex-shrink-0 w-16 h-16 bg-[#105f7f] rounded-full flex items-center justify-center">
-                <CheckCircle className="text-white w-8 h-8" />
+              <div className="flex-shrink-0 w-16 h-16 bg-white rounded-full flex items-center justify-center border border-gray-200">
+                <CheckCircle className="text-brand-dark-blue w-8 h-8" />
               </div>
               <div>
-                <h4 className="text-xl font-bold mb-2 text-brand-dark-blue">Helped couples sleep better together</h4>
+                <h4 className="text-xl font-bold mb-2 text-brand-dark-blue">Helps couples sleep better together</h4>
                 <p className="text-white">Restore intimacy and strengthen relationships</p>
               </div>
             </div>
-            <div className="flex items-start space-x-6 p-6 rounded-2xl bg-[#105f7f] hover:bg-brand-dark-blue/80 transition-all duration-300 animate-slide-in-right">
+            <div className="flex items-start space-x-6 p-6 rounded-2xl bg-white hover:bg-gray-50 border border-gray-200 transition-all duration-300 animate-slide-in-right">
               <div className="flex-shrink-0 w-16 h-16 bg-[#fead01] rounded-full flex items-center justify-center">
-                <Users className="text-white w-8 h-8" />
+                <Users className="text-brand-dark-blue w-8 h-8" />
               </div>
               <div>
-                <h4 className="text-xl font-bold mb-2 text-brand-orange">Built trust and loyalty from customers</h4>
-                <p className="text-white">Become the go-to health solution provider</p>
+                <h4 className="text-xl font-bold mb-2 text-brand-orange">Builds trust and loyalty with customers</h4>
+                <p className="text-gray-700">Become the go-to health solution provider</p>
               </div>
             </div>
-            <div className="flex items-start space-x-6 p-6 rounded-2xl bg-[#105f7f] hover:bg-brand-dark-blue/80 transition-all duration-300 animate-slide-in-left">
+            <div className="flex items-start space-x-6 p-6 rounded-2xl bg-white hover:bg-gray-50 border border-gray-200 transition-all duration-300 animate-slide-in-left">
               <div className="flex-shrink-0 w-16 h-16 bg-[#fead01] rounded-full flex items-center justify-center">
-                <Target className="text-white w-8 h-8" />
+                <Target className="text-brand-dark-blue w-8 h-8" />
               </div>
               <div>
-                <h4 className="text-xl font-bold mb-2 text-brand-orange">Sold products people actually asked about</h4>
-                <p className="text-white">Meet existing demand instead of creating it</p>
+                <h4 className="text-xl font-bold mb-2 text-brand-orange">Sell products people actually ask about</h4>
+                <p className="text-gray-700">Meet existing demand instead of creating it</p>
               </div>
             </div>
             <div className="flex items-start space-x-6 p-6 rounded-2xl bg-[#fead01] hover:bg-brand-orange/80 transition-all duration-300 animate-slide-in-right">
-              <div className="flex-shrink-0 w-16 h-16 bg-[#105f7f] rounded-full flex items-center justify-center">
-                <DollarSign className="text-white w-8 h-8" />
+              <div className="flex-shrink-0 w-16 h-16 bg-white rounded-full flex items-center justify-center border border-gray-200">
+                <DollarSign className="text-brand-dark-blue w-8 h-8" />
               </div>
               <div>
-                <h4 className="text-xl font-bold mb-2 text-brand-dark-blue">Created $1K+ per month in pure, recurring profit</h4>
+                <h4 className="text-xl font-bold mb-2 text-brand-dark-blue">Create over $1K+ per month</h4>
                 <p className="text-white">Passive income stream with high margins</p>
               </div>
             </div>
           </div>
         </div>
+        
       </section>
 
       {/* Features Section */}
-      <section id="features" className="section-padding bg-brand-dark-blue text-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-black/10"></div>
+      <section id="features" className="section-padding bg-white text-black relative overflow-hidden">
+        <div className="hidden"></div>
         <div className="container-custom relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 animate-slide-in-up">
-              And now with help from Super Seven CPAP Stations,{' '}
-              <span className="text-brand-orange">you can and we've made it frictionless:</span>
+              Become a Reseller with{' '}
+              <span className="text-brand-orange">CPAP Stations</span>
             </h2>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="feature-card animate-slide-in-left">
+            <div className="bg-white p-6 rounded-xl border border-gray-200 hover:border-gray-300 transition-all duration-300 animate-slide-in-left">
               <div className="text-5xl mb-6">🧾</div>
               <h4 className="text-xl font-bold mb-4">No upfront inventory</h4>
-              <p className="text-gray-200 leading-relaxed">Start selling without the financial risk</p>
+              <p className="text-gray-700 leading-relaxed">Start selling without the financial risk</p>
               <div className="mt-4 flex items-center text-brand-orange">
                 <CheckCircle className="w-4 h-4 mr-2" />
                 <span className="text-sm">Risk-free start</span>
               </div>
             </div>
-            <div className="feature-card animate-slide-in-up">
+            <div className="bg-white p-6 rounded-xl border border-gray-200 hover:border-gray-300 transition-all duration-300 animate-slide-in-up">
               <div className="text-5xl mb-6">💡</div>
               <h4 className="text-xl font-bold mb-4">Digital Marketing Support</h4>
-              <p className="text-gray-200 leading-relaxed">We help you get more customers</p>
+              <p className="text-gray-700 leading-relaxed">We help you get more customers</p>
               <div className="mt-4 flex items-center text-brand-orange">
                 <TrendingUp className="w-4 h-4 mr-2" />
                 <span className="text-sm">Managed marketing</span>
               </div>
             </div>
-            <div className="feature-card animate-slide-in-right">
+            <div className="bg-white p-6 rounded-xl border border-gray-200 hover:border-gray-300 transition-all duration-300 animate-slide-in-right">
               <div className="text-5xl mb-6">🔁</div>
               <h4 className="text-xl font-bold mb-4">Recurring revenue</h4>
-              <p className="text-gray-200 leading-relaxed">From high-margin accessories</p>
+              <p className="text-gray-700 leading-relaxed">From high-margin accessories</p>
               <div className="mt-4 flex items-center text-brand-orange">
                 <DollarSign className="w-4 h-4 mr-2" />
                 <span className="text-sm">Repeat customers</span>
               </div>
             </div>
-            <div className="feature-card animate-slide-in-left">
+            <div className="bg-white p-6 rounded-xl border border-gray-200 hover:border-gray-300 transition-all duration-300 animate-slide-in-left">
               <div className="text-5xl mb-6">🛠️</div>
               <h4 className="text-xl font-bold mb-4">Full setup included</h4>
-              <p className="text-gray-200 leading-relaxed">Signage and sales scripts included</p>
+              <p className="text-gray-700 leading-relaxed">Signage and sales scripts included</p>
               <div className="mt-4 flex items-center text-brand-orange">
                 <Zap className="w-4 h-4 mr-2" />
                 <span className="text-sm">Plug & play</span>
               </div>
             </div>
-            <div className="feature-card animate-slide-in-up">
+            <div className="bg-white p-6 rounded-xl border border-gray-200 hover:border-gray-300 transition-all duration-300 animate-slide-in-up">
               <div className="text-5xl mb-6">🛡️</div>
               <h4 className="text-xl font-bold mb-4">60-day return guarantee</h4>
-              <p className="text-gray-200 leading-relaxed">If it doesn't sell, send it back</p>
+              <p className="text-gray-700 leading-relaxed">If it doesn't sell, send it back</p>
               <div className="mt-4 flex items-center text-brand-orange">
                 <Shield className="w-4 h-4 mr-2" />
                 <span className="text-sm">Money back guarantee</span>
@@ -703,10 +682,21 @@ export default function Home() {
             </div>
           </div>
           <div className="text-center mt-16 ">
-              <p className="text-gray-200 leading-relaxed text-2xl font-bold ">You don't need more SKUs.</p>
-              <p className="text-gray-200 leading-relaxed text-2xl font-bold">You need smart ones that move on their own.</p>
-            </div>
+              <p className="text-gray-800 leading-relaxed text-2xl font-bold ">You don't need more SKUs.</p>
+              <p className="text-gray-800 leading-relaxed text-2xl font-bold">You need smart ones that move on their own.</p>
+          </div>
+          
         </div>
+        <div className="animate-slide-in-up mt-8 md:mt-12 w-full flex justify-center items-center">
+              <div className="relative inline-block w-full sm:w-auto">
+                <div className="absolute inset-0 bg-brand-orange rounded-3xl transform rotate-1 scale-105 opacity-20"></div>
+                <a href="https://wa.me/message/RMK63MOVRDPEG1" target="_blank" className="relative bg-brand-orange text-brand-dark-blue text-base sm:text-lg md:text-xl lg:text-2xl font-bold py-3 px-4 sm:py-4 sm:px-6 md:py-5 md:px-8 lg:py-6 lg:px-12 rounded-3xl shadow-2xl hover:bg-yellow-400 transition-all duration-300 transform hover:scale-105 hover:shadow-3xl flex items-center justify-center w-full sm:w-auto">
+                  <MessageCircle className="inline mr-2 sm:mr-3 w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
+                  <span className="whitespace-nowrap">Message us on Whatsapp</span>
+                  <ArrowRight className="inline ml-2 sm:ml-3 w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
+                </a>
+              </div>
+            </div>
       </section>
       {/* Proof Section */}
       <section id="proof" className="section-padding bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
@@ -759,8 +749,8 @@ export default function Home() {
                         <p className="text-lg text-gray-600">Windsor, ON</p>
                       </div>
                       <div className="hidden md:block">
-                        <div className="bg-brand-dark-blue p-4 rounded-full">
-                          <Award className="w-8 h-8 text-white" />
+                        <div className="bg-gray-100 p-4 rounded-full border border-gray-200">
+                          <Award className="w-8 h-8 text-brand-dark-blue" />
                         </div>
                       </div>
                     </div>
@@ -877,7 +867,7 @@ export default function Home() {
       </section>
 
       {/* Market Ready Section */}
-      <section className="section-padding gradient-bg-orange text-brand-dark-blue relative overflow-hidden">
+      <section className="section-padding bg-brand-dark-blue text-white relative overflow-hidden">
         <div className="absolute inset-0 pattern-bg"></div>
         <div className="container-custom relative z-10 text-center">
           <div className="max-w-4xl mx-auto">
@@ -889,9 +879,9 @@ export default function Home() {
               <span className="font-bold">begging for the solution.</span>
             </p>
             <div className="relative">
-              <div className="absolute inset-0 bg-brand-dark-blue rounded-3xl transform rotate-1"></div>
+                <div className="absolute inset-0 bg-white rounded-3xl transform rotate-1 border border-gray-200"></div>
               <div className="relative bg-white p-8 rounded-3xl shadow-2xl">
-                <p className="text-3xl md:text-4xl font-bold text-brand-dark-blue animate-slide-in-up">
+                <p className="text-3xl md:text-4xl font-bold text-black animate-slide-in-up">
                   You just need to stock it.
                 </p>
               </div>
@@ -1040,7 +1030,7 @@ export default function Home() {
             <p className="text-xl md:text-2xl mb-6 text-gray-600 animate-slide-in-up max-w-3xl mx-auto">
               When you sign up, here's what you receive within{' '}
               <span className="font-bold text-brand-orange bg-brand-orange/10 px-3 py-1 rounded-full">
-                3–4 business days
+                5-10 business days
               </span>
             </p>
             <div className="flex items-center justify-center space-x-2 text-sm text-gray-500">
@@ -1098,7 +1088,7 @@ export default function Home() {
                 {/* Content */}
                 <div className="relative z-10">
                   <div className="flex items-start space-x-6">
-                    <div className="flex-shrink-0 w-16 h-16 bg-brand-dark-blue rounded-xl flex items-center justify-center text-2xl shadow-md transform group-hover:scale-105 transition-transform duration-300">
+                    <div className="flex-shrink-0 w-16 h-16 bg-gray-100 rounded-xl flex items-center justify-center text-2xl shadow-md transform group-hover:scale-105 transition-transform duration-300 border border-gray-200">
                       {item.icon}
                     </div>
                     <div className="flex-1">
@@ -1163,15 +1153,25 @@ export default function Home() {
                     Join 100+ pharmacies already benefiting from CPAP stations
                   </p>
                 </div>
+                <div className="animate-slide-in-up mt-8 md:mt-12 w-full flex justify-center items-center">
+              <div className="relative inline-block w-full sm:w-auto">
+                <div className="absolute inset-0 bg-brand-orange rounded-3xl transform rotate-1 scale-105 opacity-20"></div>
+                <a href="https://wa.me/message/RMK63MOVRDPEG1" target="_blank" className="relative bg-brand-orange text-brand-dark-blue text-base sm:text-lg md:text-xl lg:text-2xl font-bold py-3 px-4 sm:py-4 sm:px-6 md:py-5 md:px-8 lg:py-6 lg:px-12 rounded-3xl shadow-2xl hover:bg-yellow-400 transition-all duration-300 transform hover:scale-105 hover:shadow-3xl flex items-center justify-center w-full sm:w-auto">
+                  <MessageCircle className="inline mr-2 sm:mr-3 w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
+                  <span className="whitespace-nowrap">Message us on Whatsapp</span>
+                  <ArrowRight className="inline ml-2 sm:ml-3 w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
+                </a>
+              </div>
+            </div>
               </div>
             </div>
           </div>
-        </div>
+        </div>   
       </section>
 
       {/* Objection Handling */}
-      <section id="pricing" className="section-padding bg-brand-dark-blue text-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-black/20"></div>
+      <section id="pricing" className="section-padding bg-white text-black relative overflow-hidden">
+        <div className="hidden"></div>
         <div className="container-custom relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 animate-slide-in-up">
@@ -1207,7 +1207,7 @@ export default function Home() {
               }`}>
                 <h4 className="font-bold mb-4 text-brand-orange text-xl">"{item.question}"</h4>
                 <p className="mb-4 text-lg font-semibold">{item.answer}</p>
-                <p className="text-gray-200 leading-relaxed whitespace-pre-line">{item.detail}</p>
+                <p className="text-gray-700 leading-relaxed whitespace-pre-line">{item.detail}</p>
               </div>
             ))}
           </div>
@@ -1215,46 +1215,39 @@ export default function Home() {
       </section>
 
       {/* Call to Action */}
-      <section id="contact" className="section-padding gradient-bg-orange text-brand-dark-blue relative overflow-hidden">
+      <section id="contact" className="section-padding bg-brand-dark-blue text-white relative overflow-hidden">
         <div className="absolute inset-0 pattern-bg"></div>
         <div className="container-custom relative z-10 text-center">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 animate-slide-in-up">
               Next Steps
             </h2>
-            <p className="text-xl md:text-2xl mb-8 animate-slide-in-up">
+            <p className="text-xl md:text-2xl mb-8 animate-slide-in-up text-white">
               We only onboard a{' '}
               <span className="font-bold">limited number of pharmacies per postal region</span>{' '}
               to avoid local overlap.
             </p>
             <div className="relative mb-12">
-              <div className="absolute inset-0 bg-brand-dark-blue rounded-3xl transform -rotate-1"></div>
-              <div className="relative bg-white p-8 rounded-3xl shadow-2xl">
-                <p className="text-2xl md:text-3xl font-bold text-brand-dark-blue animate-slide-in-up">
-                  If you're seeing this — you're still early.
+              <div className="relative bg-transparent p-8 rounded-3xl">
+                <p className="text-2xl md:text-3xl font-bold text-black animate-slide-in-up">
+                  If you're seeing this, you're still early.
                 </p>
               </div>
             </div>
-            <div className="bg-white/90 backdrop-blur-sm p-8 lg:p-12 rounded-3xl shadow-2xl border border-white/20">
+            <div className="bg-white/90 backdrop-blur-sm p-8 lg:p-12 rounded-3xl shadow-2xl border border-white/20 text-brand-dark-blue">
               <div className="text-center flex flex-col items-center justify-center">
-                <div className="text-6xl mb-6 animate-float">📞</div>
-                <h4 className="text-2xl md:text-3xl font-bold mb-6 text-brand-dark-blue">
-                  BOOK A FREE 15-MIN DISCOVERY CALL
+                <div className="text-6xl mb-6 animate-float">💬</div>
+                <h4 className="text-2xl md:text-3xl font-bold mb-6">
+                Message us on Whatsapp
                 </h4>
                 <p className="text-lg md:text-xl mb-6 text-gray-700 max-w-2xl mx-auto">
                   See exactly how other pharmacies are earning $1K+/month without lifting a finger.
                 </p>
-                <p className="text-lg mb-8 text-gray-600">
-                  All you have to do is talk with our team and get all your questions answered — no pressure.
-                </p>
-                <a href="https://calendly.com/super7distribution-info/30min" target="_blank" className="btn-primary text-2xl py-6 px-12 rounded-2xl shadow-2xl animate-pulse-slow">
-                  <Phone className="inline mr-3 w-6 h-6" />
-                  Book Free Discovery Call
+                <a href="https://wa.me/message/RMK63MOVRDPEG1" target="_blank" className="btn-primary text-2xl py-6 px-12 rounded-2xl shadow-2xl animate-pulse-slow">
+                  <MessageCircle className="inline mr-3 w-6 h-6" />
+                  Message us on Whatsapp
                   <ArrowRight className="inline ml-3 w-6 h-6" />
                 </a>
-                <p className="text-sm mt-6 text-gray-600">
-                  ⏱️ Average call duration: 12 minutes | 🔥 Next available: Today
-                </p>
               </div>
             </div>
           </div>
@@ -1262,7 +1255,7 @@ export default function Home() {
       </section>
 
       {/* Final CTA */}
-      <section className="section-padding gradient-bg text-white relative overflow-hidden flex flex-col items-center justify-center">
+      {/* <section className="section-padding gradient-bg text-white relative overflow-hidden flex flex-col items-center justify-center">
         <div className="absolute inset-0 wave-bg"></div>
         <div className="container-custom relative z-10 text-center">
           <div className="max-w-4xl mx-auto flex flex-col items-center justify-center">
@@ -1282,11 +1275,54 @@ export default function Home() {
                 <p className="text-lg md:text-xl">Don't let the store down the road beat you to it.</p>
               </div>
             </div>
-            <a href="https://calendly.com/super7distribution-info/30min" target="_blank" className="btn-primary text-2xl py-6 px-12 rounded-2xl shadow-2xl animate-pulse-slow">
+            <a href="https://wa.me/message/RMK63MOVRDPEG1" target="_blank" className="btn-primary text-2xl py-6 px-12 rounded-2xl shadow-2xl animate-pulse-slow">
               <ChevronRight className="inline mr-3 w-6 h-6" />
-              Get Your CPAP Station Set Up Today
+              Message us on WhatsApp
               <ArrowRight className="inline ml-3 w-6 h-6" />
             </a>
+          </div>
+        </div>
+      </section> */}
+
+      {/* Video Section */}
+      <section className="section-padding bg-gradient-to-br from-gray-50 to-white">
+        <div className="container-custom">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 text-brand-dark-blue animate-slide-in-up">
+              See It In Action
+            </h2>
+            <p className="text-xl md:text-2xl mb-8 text-gray-600 animate-slide-in-up">
+              Watch how CPAP stations are transforming pharmacies across North America
+            </p>
+          </div>
+          <div className="max-w-4xl mx-auto">
+            <div className="relative bg-white rounded-2xl shadow-2xl p-6 md:p-8 border border-gray-200">
+              <div className="aspect-video rounded-xl overflow-hidden shadow-lg">
+                <iframe 
+                  width="100%" 
+                  height="100%" 
+                  src="https://www.youtube.com/embed/_CzI6DaTgk8?si=D4m-ua7rvpjQdKA0" 
+                  title="YouTube video player" 
+                  frameBorder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  referrerPolicy="strict-origin-when-cross-origin" 
+                  allowFullScreen
+                  className="w-full h-full"
+                ></iframe>
+              </div>
+              <div className="mt-6 text-center">
+                <p className="text-gray-600 text-lg">
+                  Ready to start your own success story?
+                </p>
+                <div className="mt-4">
+                  <a href="https://wa.me/message/RMK63MOVRDPEG1" target="_blank" className="inline-flex items-center bg-brand-orange text-brand-dark-blue font-bold py-3 px-8 rounded-xl shadow-lg hover:bg-yellow-400 transition-all duration-300 transform hover:scale-105">
+                    <MessageCircle className="mr-2 w-5 h-5" />
+                    Get Started Today
+                    <ArrowRight className="ml-2 w-5 h-5" />
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -1305,16 +1341,16 @@ export default function Home() {
                 Helping pharmacies across North America turn 2 feet of shelf space into $1K+ monthly passive revenue while helping their communities sleep better.
               </p>
               <div className="flex items-center space-x-4">
-                <div className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg">
+                <div className="bg-white/10 px-4 py-2 rounded-lg border border-white/20">
                   <div className="flex items-center space-x-2">
                     <Shield className="w-4 h-4 text-brand-orange" />
-                    <span className="text-sm font-medium">60-Day Guarantee</span>
+                    <span className="text-sm font-medium text-white">60-Day Guarantee</span>
                   </div>
                 </div>
-                <div className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg">
+                <div className="bg-white/10 px-4 py-2 rounded-lg border border-white/20">
                   <div className="flex items-center space-x-2">
                     <Phone className="w-4 h-4 text-brand-orange" />
-                    <span className="text-sm font-medium">24/7 Support</span>
+                    <span className="text-sm font-medium text-white">24/7 Support</span>
                   </div>
                 </div>
               </div>
@@ -1499,7 +1535,7 @@ export default function Home() {
           </div>
           
           {/* Bottom Bar */}
-          <div className="border-t border-gray-700 pt-8">
+          <div className="border-t border-white/20 pt-8">
             <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
               <div className="flex items-center space-x-2 text-gray-400">
                 <span className="text-sm">© 2024 Super Seven CPAP Stations. All rights reserved.</span>
@@ -1532,13 +1568,13 @@ export default function Home() {
             <span className="text-xs font-medium">Benefits</span>
           </a>
           <a 
-            href="https://calendly.com/super7distribution-info/30min" 
+            href="https://wa.me/message/RMK63MOVRDPEG1" 
             target="_blank"
             className="mobile-nav-item relative"
           >
             <div className="absolute -top-2 -left-2 -right-2 -bottom-2 bg-brand-orange rounded-full opacity-90"></div>
             <div className="relative z-10 text-white text-center flex flex-col items-center justify-center">
-              <Phone className="w-5 h-5" />
+              <MessageCircle className="w-5 h-5" />
               <span className="text-xs font-medium">Contact</span>
             </div>
           </a>
