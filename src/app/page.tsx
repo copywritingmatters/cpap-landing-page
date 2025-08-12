@@ -57,7 +57,7 @@ export default function Home() {
         <div className="container-custom">
           <div className="flex items-center justify-between">
             <a href="#" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>
-              <img src="/supersevendistribution.png" alt="Super Seven Distribution" className="w-[100px] transition-all duration-300 hover:scale-105" />
+              <img src="/supersevendistribution.png" alt="Super Seven Distribution" className="w-[50px] md:w-[100px] transition-all duration-300 hover:scale-105" />
             </a>
             
             {/* Desktop Navigation */}
@@ -81,7 +81,7 @@ export default function Home() {
             
             {/* Desktop CTA */}
             <a href="https://wa.me/message/RMK63MOVRDPEG1" target="_blank" className="hidden lg:flex btn-secondary animate-fade-in">
-              Get Started <ArrowRight className="ml-2 w-4 h-4" />
+              Message Now! <ArrowRight className="ml-2 w-4 h-4" />
             </a>
             
           </div>
@@ -98,20 +98,14 @@ export default function Home() {
           {/* Left Column - Text Content */}
           <div className="w-full lg:w-1/2 lg:pr-8 xl:pr-12 flex flex-col items-center lg:items-start text-center lg:text-left">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-slide-in-up leading-tight max-w-2xl md:max-w-3xl lg:max-w-none mx-auto lg:mx-0">
-              Most Pharmacies Are Missing Out on{' '}
+            Pharmacists Across North America Are Quietly Pocketing an{' '}
               <span className="relative inline-block">
-                <span className="text-brand-orange">$1K/Month</span>
+                <span className="text-brand-orange">EXTRA$1K/Month</span>
                 <div className="absolute -bottom-2 left-0 right-0 h-1 bg-brand-orange rounded-full opacity-60"></div>
               </span>{' '}
-              in Passive Revenue
             </h1>
             <div className="text-md md:text-lg lg:text-1xl mb-6 max-w-xl md:max-w-2xl lg:max-w-none mx-auto lg:mx-0 animate-slide-in-up opacity-90 leading-relaxed">
-              Here's how Pharmacists across North America are turning{' '}
-              <span className="relative inline-block font-bold text-brand-orange">
-                2 feet of shelf space
-                <div className="absolute bottom-1 left-0 right-0 h-0.5 bg-brand-orange rounded-full"></div>
-              </span>{' '}
-              into a sleep wellness station that sells itself.
+            2 Feet of Shelf Space. Endless Revenue Potential. Here’s the Pharmacy Secret Everyone’s Talking About.
             </div>
 
             {/* Trusted By Banner */}
@@ -672,7 +666,7 @@ export default function Home() {
               <p className="text-gray-700 leading-relaxed">We help you get more customers</p>
               <div className="mt-4 flex items-center text-brand-orange">
                 <TrendingUp className="w-4 h-4 mr-2" />
-                <span className="text-sm">Managed marketing</span>
+                <span className="text-sm">Expert marketing strategy</span>
               </div>
             </div>
             <div className="bg-white p-6 rounded-xl border border-gray-200 hover:border-gray-300 transition-all duration-300 animate-slide-in-right">
@@ -1052,7 +1046,7 @@ export default function Home() {
             <p className="text-xl md:text-2xl mb-6 text-gray-600 animate-slide-in-up max-w-3xl mx-auto">
               When you sign up, here's what you receive within{' '}
               <span className="font-bold text-brand-orange bg-brand-orange/10 px-3 py-1 rounded-full">
-                5-10 business days
+                7-10 business days
               </span>
             </p>
             <div className="flex items-center justify-center space-x-2 text-sm text-gray-500">
@@ -1091,14 +1085,8 @@ export default function Home() {
               { 
                 icon: '📱', 
                 title: 'Digital Marketing Support', 
-                subtitle: 'Paid by us!',
+                subtitle: 'Expert marketing strategies',
                 description: 'Targeted Facebook and Google ads driving customers to your pharmacy. Zero cost to you.'
-              },
-              { 
-                icon: '🎓', 
-                title: 'Private Sales Training', 
-                subtitle: 'Expert support included',
-                description: 'Comprehensive onboarding guide plus ongoing support. Your success is our priority.'
               }
             ].map((item, index) => (
               <div key={index} className={`group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100 ${
