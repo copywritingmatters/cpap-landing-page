@@ -200,6 +200,48 @@ export default function Home() {
           </div>
         </div>
       </section>
+       {/* Video Section */}
+       <section className="section-padding bg-gradient-to-br from-gray-50 to-white">
+        <div className="container-custom">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 text-brand-dark-blue animate-slide-in-up">
+              See It In Action
+            </h2>
+            <p className="text-xl md:text-2xl mb-8 text-gray-600 animate-slide-in-up">
+              Watch how CPAP stations are transforming pharmacies across North America
+            </p>
+          </div>
+          <div className="max-w-4xl mx-auto">
+            <div className="relative bg-white rounded-2xl shadow-2xl p-6 md:p-8 border border-gray-200">
+              <div className="aspect-video rounded-xl overflow-hidden shadow-lg">
+                <iframe 
+                  width="100%" 
+                  height="100%" 
+                  src="https://www.youtube.com/embed/_CzI6DaTgk8?si=D4m-ua7rvpjQdKA0" 
+                  title="YouTube video player" 
+                  frameBorder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  referrerPolicy="strict-origin-when-cross-origin" 
+                  allowFullScreen
+                  className="w-full h-full"
+                ></iframe>
+              </div>
+              <div className="mt-6 text-center">
+                <p className="text-gray-600 text-lg">
+                  Ready to start your own success story?
+                </p>
+                <div className="mt-4">
+                  <a href="https://wa.me/message/RMK63MOVRDPEG1" target="_blank" className="inline-flex items-center bg-brand-orange text-brand-dark-blue font-bold py-3 px-8 rounded-xl shadow-lg hover:bg-yellow-400 transition-all duration-300 transform hover:scale-105">
+                    <MessageCircle className="mr-2 w-5 h-5" />
+                    Get Started Today
+                    <ArrowRight className="ml-2 w-5 h-5" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Statistics Section - Professional Design */}
       <section className="section-padding bg-white text-black relative overflow-hidden">
@@ -1384,79 +1426,6 @@ export default function Home() {
                   Message us on Whatsapp
                   <ArrowRight className="inline ml-3 w-6 h-6" />
                 </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Final CTA */}
-      {/* <section className="section-padding gradient-bg text-white relative overflow-hidden flex flex-col items-center justify-center">
-        <div className="absolute inset-0 wave-bg"></div>
-        <div className="container-custom relative z-10 text-center">
-          <div className="max-w-4xl mx-auto flex flex-col items-center justify-center">
-            <h3 className="text-4xl md:text-5xl font-bold mb-8 animate-slide-in-up">
-              CPAP isn't a maybe anymore.{' '}
-              <span className="text-brand-orange">It's a must.</span>
-            </h3>
-            <p className="text-xl md:text-2xl mb-8 animate-slide-in-up">
-              Your customers are searching for sleep.
-            </p>
-            <p className="text-xl md:text-2xl mb-12 animate-slide-in-up">
-              Be the one who helps them get it and{' '}
-              <span className="font-bold text-brand-orange">grow your pharmacy</span> while you're at it.
-            </p>
-            <div className="space-y-6 mb-12 animate-slide-in-up">
-              <div className="flex items-center justify-center space-x-4">
-                <p className="text-lg md:text-xl">Don't let the store down the road beat you to it.</p>
-              </div>
-            </div>
-            <a href="https://wa.me/message/RMK63MOVRDPEG1" target="_blank" className="btn-primary text-2xl py-6 px-12 rounded-2xl shadow-2xl animate-pulse-slow">
-              <ChevronRight className="inline mr-3 w-6 h-6" />
-              Message us on WhatsApp
-              <ArrowRight className="inline ml-3 w-6 h-6" />
-            </a>
-          </div>
-        </div>
-      </section> */}
-
-      {/* Video Section */}
-      <section className="section-padding bg-gradient-to-br from-gray-50 to-white">
-        <div className="container-custom">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 text-brand-dark-blue animate-slide-in-up">
-              See It In Action
-            </h2>
-            <p className="text-xl md:text-2xl mb-8 text-gray-600 animate-slide-in-up">
-              Watch how CPAP stations are transforming pharmacies across North America
-            </p>
-          </div>
-          <div className="max-w-4xl mx-auto">
-            <div className="relative bg-white rounded-2xl shadow-2xl p-6 md:p-8 border border-gray-200">
-              <div className="aspect-video rounded-xl overflow-hidden shadow-lg">
-                <iframe 
-                  width="100%" 
-                  height="100%" 
-                  src="https://www.youtube.com/embed/_CzI6DaTgk8?si=D4m-ua7rvpjQdKA0" 
-                  title="YouTube video player" 
-                  frameBorder="0" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                  referrerPolicy="strict-origin-when-cross-origin" 
-                  allowFullScreen
-                  className="w-full h-full"
-                ></iframe>
-              </div>
-              <div className="mt-6 text-center">
-                <p className="text-gray-600 text-lg">
-                  Ready to start your own success story?
-                </p>
-                <div className="mt-4">
-                  <a href="https://wa.me/message/RMK63MOVRDPEG1" target="_blank" className="inline-flex items-center bg-brand-orange text-brand-dark-blue font-bold py-3 px-8 rounded-xl shadow-lg hover:bg-yellow-400 transition-all duration-300 transform hover:scale-105">
-                    <MessageCircle className="mr-2 w-5 h-5" />
-                    Get Started Today
-                    <ArrowRight className="ml-2 w-5 h-5" />
-                  </a>
-                </div>
               </div>
             </div>
           </div>
