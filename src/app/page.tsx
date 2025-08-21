@@ -51,7 +51,15 @@ export default function Home() {
   }
 
   return (
-    <main className="min-h-screen bg-white overflow-x-hidden pb-16 md:pb-0">
+    <>
+      {/* Mailchimp Modal Script */}
+      <script 
+        id="mcjs"
+        dangerouslySetInnerHTML={{
+          __html: `!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/e07d66bb3d6ced8e22a1ce256/e8ab68946dbe7b5504bf00301.js");`
+        }}
+      />
+      <main className="min-h-screen bg-white overflow-x-hidden pb-16 md:pb-0">
       {/* Header */}
       <header className="bg-brand-dark-blue text-white py-4 relative md:fixed md:top-0 md:left-0 md:right-0 md:w-full z-50 shadow-lg backdrop-blur-md transition-all duration-300">
         <div className="container-custom">
@@ -1700,5 +1708,6 @@ export default function Home() {
         </div>
       </nav>
     </main>
+    </>
   )
 } 
